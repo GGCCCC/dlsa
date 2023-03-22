@@ -1,6 +1,8 @@
 # `dlsa` Distributed Least Squares Approximation 
 _implemented with Apache Spark_
 
+GCC到此一游 哈哈哈
+
 ## Introduction
 
 In this work, we develop a distributed least squares approximation (DLSA) method that is able to solve a large family of regression problems (e.g., linear regression, logistic regression, and Cox's model) on a distributed system. By approximating the local objective function using a local quadratic form, we are able to obtain a combined estimator by taking a weighted average of local estimators. The resulting estimator is proved to be statistically as efficient as the global estimator. Moreover, it requires only one round of communication. We further conduct shrinkage estimation based on the DLSA estimation using an adaptive Lasso approach. The solution can be easily obtained by using the LARS algorithm on the master node. It is theoretically shown that the resulting estimator possesses the oracle property and is selection consistent by using a newly designed distributed Bayesian information criterion (DBIC). The finite sample performance and the computational efficiency are further illustrated by an extensive numerical study and an airline dataset. 
